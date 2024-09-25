@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Product : MonoBehaviour, IDropHandler
+public class Product : MonoBehaviour, IDropHandler, IPointerDownHandler
 {
     public string[] AbsoluteNegativeWords;
     public string[] NegativeWords;
@@ -12,8 +12,27 @@ public class Product : MonoBehaviour, IDropHandler
 
     private int starRating = 5;
 
-    public void OnDrop(PointerEventData eventData)
+    private void Start()
     {
+        AddPhysics2DRaycaster();
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log("Clicked: " + eventData.pointerCurrentRaycast.gameObject.name);
+    }
+
+    private void AddPhysics2DRaycaster()
+    {
+        Physics2DRaycaster physicsRaycaster = FindObjectOfType<Physics2DRaycaster>();
+        if (physicsRaycaster == null)
+        {
+            Camera.main.gameObject.AddComponent<Physics2DRaycaster>();
+        }
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {   
         GameObject droppedObject = eventData.pointerDrag;
         if (droppedObject != null)
         {
