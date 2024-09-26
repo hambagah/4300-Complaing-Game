@@ -3471,8 +3471,9 @@ MonoBehaviour:
   - {fileID: 1465106057}
   - {fileID: 944330817}
   products:
-  - {fileID: 7282473655006053359, guid: 29b727e01a4263b44a1d36159eedd8c6, type: 3}
-  - {fileID: 2490967392128242798, guid: b0ea688e5f12ba44d80af05a76ff8d94, type: 3}
+  - {fileID: 944859610075973055, guid: d6cb34af0281ad64aa525ae1d090ddf6, type: 3}
+  - {fileID: 4511550143678720918, guid: 4483a2bbbc98d214093a8d62aed857ef, type: 3}
+  - {fileID: 944859610075973055, guid: b0ea688e5f12ba44d80af05a76ff8d94, type: 3}
 --- !u!4 &1239209465
 Transform:
   m_ObjectHideFlags: 0
@@ -4560,7 +4561,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -9.340027, y: -9.25}
-  m_SizeDelta: {x: 200, y: 700}
+  m_SizeDelta: {x: 205.5, y: 700}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1564180612
 MonoBehaviour:
@@ -5277,8 +5278,9 @@ MonoBehaviour:
   draggableWordPrefab: {fileID: 3962802404899605363, guid: f87729df06b86a44aa3a2565d8e08c63, type: 3}
   wordsTrans: {fileID: 1564180611}
   products:
-  - {fileID: 7282473655006053359, guid: 29b727e01a4263b44a1d36159eedd8c6, type: 3}
-  - {fileID: 2490967392128242798, guid: b0ea688e5f12ba44d80af05a76ff8d94, type: 3}
+  - {fileID: 944859610075973055, guid: b0ea688e5f12ba44d80af05a76ff8d94, type: 3}
+  - {fileID: 4511550143678720918, guid: 4483a2bbbc98d214093a8d62aed857ef, type: 3}
+  - {fileID: 944859610075973055, guid: d6cb34af0281ad64aa525ae1d090ddf6, type: 3}
   AbsoluteNegativeWords:
   - Bad
 --- !u!4 &1981005168

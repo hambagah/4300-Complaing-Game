@@ -34,8 +34,8 @@ public class CameraMove : MonoBehaviour
         {
             Camera.main.transform.position = origin - difference;
             Camera.main.transform.position = new Vector3(
-            Mathf.Clamp(Camera.main.transform.position.x, -41, 41),
-            Mathf.Clamp(Camera.main.transform.position.y, -3, 3), transform.position.z);
+            Mathf.Clamp(Camera.main.transform.position.x, -1280, 2080),
+            Mathf.Clamp(Camera.main.transform.position.y, 100, 300), transform.position.z);
             //Realistically constraints should be X = 30 and Y = 22
         }
 

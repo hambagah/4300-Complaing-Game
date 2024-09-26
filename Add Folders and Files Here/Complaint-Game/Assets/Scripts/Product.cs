@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class Product : MonoBehaviour, IDropHandler, IPointerDownHandler
 {
     public string[] AbsoluteNegativeWords;
+    public string[] VeryNegativeWords;
     public string[] NegativeWords;
     public string[] PositiveWords;
+    public string[] VeryPositiveWords;
     public TMP_Text starText;
 
     private int starRating = 5;
@@ -42,7 +44,7 @@ public class Product : MonoBehaviour, IDropHandler, IPointerDownHandler
                 string category = draggableWord.category;
                 Debug.Log($"Word '{droppedObject.name}' with category '{category}' dropped on {name}");
 
-                if (System.Array.Exists(AbsoluteNegativeWords, word => word == category))
+                if (System.Array.Exists(AbsoluteNegativeWords, word => word == category)||System.Array.Exists(VeryNegativeWords, word => word == category))
                 {
                     Debug.Log("Absolute Negative Effect");
                     UpdateStars(-2);
@@ -57,8 +59,13 @@ public class Product : MonoBehaviour, IDropHandler, IPointerDownHandler
                     Debug.Log("Positive Effect");
                     UpdateStars(1);
                 }
+                else if (System.Array.Exists(VeryPositiveWords, word => word == category))
+                {
+                    Debug.Log("Very Positive Effect");
+                    UpdateStars(2);
+                }
 
-                // droppedObject.SetActive(false);
+                droppedObject.SetActive(false);
             }
         }
     }
