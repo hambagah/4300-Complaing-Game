@@ -59,11 +59,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AbsoluteNegativeWords:
   - Bad
+  - Expired
+  - Rotten
+  - Stupid
+  - Expensive
   VeryNegativeWords:
   - Sweet
   NegativeWords:
   - Small
   - Dry
+  - Square
   PositiveWords:
   - Round
   VeryPositiveWords:

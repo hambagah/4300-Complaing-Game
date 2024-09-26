@@ -66,8 +66,10 @@ MonoBehaviour:
   - Dirty
   - Small
   - Dry
+  - Square
   PositiveWords:
   - Hard
+  - Round
   VeryPositiveWords:
   - Sweet
   starText: {fileID: 4802238575143817844}

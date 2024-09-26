@@ -11,12 +11,15 @@ public class Product : MonoBehaviour, IDropHandler, IPointerDownHandler
     public string[] PositiveWords;
     public string[] VeryPositiveWords;
     public TMP_Text starText;
+    [SerializeField] GameObject Karen;
 
-    private int starRating = 5;
+    private int starRating;
 
     private void Start()
     {
         AddPhysics2DRaycaster();
+        starRating = Random.Range(3, 5);
+        UpdateStars(0);
     }
 
     public void OnPointerDown(PointerEventData eventData)

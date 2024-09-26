@@ -27,6 +27,8 @@ public class WordGenerator : MonoBehaviour
         {
             allWords.AddRange(product.NegativeWords);
             allWords.AddRange(product.PositiveWords);
+            allWords.AddRange(product.VeryNegativeWords);
+            allWords.AddRange(product.VeryPositiveWords);
         }
 
         allWords.AddRange(AbsoluteNegativeWords);
