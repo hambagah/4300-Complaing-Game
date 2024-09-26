@@ -68,7 +68,7 @@ public class Product : MonoBehaviour, IDropHandler, IPointerDownHandler
                     UpdateStars(2);
                 }
 
-                droppedObject.SetActive(false);
+                // droppedObject.SetActive(false);
             }
         }
     }
